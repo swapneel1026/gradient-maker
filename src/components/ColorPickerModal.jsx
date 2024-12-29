@@ -28,7 +28,7 @@ const ColorPicker = () => {
       style={{ background: output }}
     >
       <div className="relative w-full max-w-xl p-6 overflow-y-auto bg-white rounded-lg shadow-lg max-h-[calc(100vh-4rem)] overflow-auto scrollbar-hide">
-        <h2 className="mb-4 text-2xl font-bold">Card Color Picker</h2>
+        <h2 className="mb-4 text-2xl font-bold">Color Picker</h2>
 
         <div className="flex items-center mb-4">
           <label>Gradient</label>
