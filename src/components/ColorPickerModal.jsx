@@ -28,10 +28,10 @@ const ColorPicker = () => {
       style={{ background: output }}
     >
       <div className="relative w-full max-w-xl p-6 overflow-y-auto bg-white rounded-lg shadow-lg max-h-[calc(100vh-4rem)] overflow-auto scrollbar-hide">
-        <h2 className="mb-4 text-2xl font-bold">Color Picker</h2>
+        <h2 className="mb-4 text-2xl font-bold">Gradient Maker</h2>
 
-        <div className="flex items-center mb-4">
-          <label>Gradient</label>
+        <div className="flex items-center mb-4 ">
+          <label className="font-semibold">Variations:</label>
           <select
             name=""
             id=""
@@ -50,7 +50,7 @@ const ColorPicker = () => {
           {Array.from(Array(Number(gradientPallete)).keys())?.map((gp) => {
             return (
               <label key={gp} htmlFor="color1" className="flex items-center">
-                <span className="mr-2">Color {gp + 1}:</span>
+                <span className="mr-2 font-semibold">Color {gp + 1}:</span>
                 <input
                   type="color"
                   name={`color${gp + 1}`}
@@ -76,21 +76,8 @@ const ColorPicker = () => {
             );
           })}
 
-          {/* {
-            <label htmlFor="color2" className="flex items-center">
-              <span className="mr-2">Color 2:</span>
-              <input
-                type="color"
-                name="color2"
-                id="color2"
-                value={color2}
-                onChange={(e) => setColor2(e.target.value)}
-                className="w-10 h-10 border-none rounded cursor-pointer"
-              />
-            </label>
-          } */}
           <label htmlFor="color1" className="flex items-center">
-            <span className="mr-2">Text Color:</span>
+            <span className="mr-2 font-semibold">Text Color:</span>
             <input
               type="color"
               name="textColor"
@@ -102,7 +89,7 @@ const ColorPicker = () => {
           </label>
           {
             <label htmlFor="direction" className="flex items-center">
-              <span className="mr-2">Direction:</span>
+              <span className="mr-2 font-semibold">Direction:</span>
               <select
                 id="direction"
                 onChange={(e) => setDirection(e.target.value)}
