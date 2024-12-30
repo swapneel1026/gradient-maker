@@ -122,6 +122,8 @@ const ColorPicker = () => {
               onClick={() => {
                 setColor1(randomcolor());
                 setColor2(randomcolor());
+                setColor3(randomcolor());
+                setColor4(randomcolor());
               }}
             >
               Generate Random Gradient
